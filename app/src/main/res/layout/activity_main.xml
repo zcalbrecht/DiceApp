@@ -30,12 +30,12 @@
         app:layout_constraintTop_toTopOf="@+id/image_view_die" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/main_fab"
         android:clickable="true"
         android:padding="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@android:drawable/stat_sys_warning"
-        android:id="@+id/new_fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end|bottom"

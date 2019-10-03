@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">DiceApp</string>
+    <string name="roll_stats">Roll stats</string>
+    <string name="shared_prefs_key">1</string>
+    <string name="roll_1">0</string>
+    <string name="roll_2">0</string>
+    <string name="roll_3">0</string>
+    <string name="roll_4">0</string>
+    <string name="roll_5">0</string>
+    <string name="roll_6">0</string>
+    <string name="roll_7">0</string>
+    <string name="roll_8">0</string>
+    <string name="roll_9">0</string>
+    <string name="roll_10">0</string>
+    <string name="roll_11">0</string>
+    <string name="roll_12">0</string>
+    <string name="roll_13">0</string>
+    <string name="roll_14">0</string>
+    <string name="roll_15">0</string>
+    <string name="roll_16">0</string>
+    <string name="roll_17">0</string>
+    <string name="roll_18">0</string>
+    <string name="roll_19">0</string>
+    <string name="roll_20">0</string>
 </resources>
