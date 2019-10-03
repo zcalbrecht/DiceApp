@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView textViewContent;
     private Random rng = new Random();
 
+    //int highscore = sharedPref.getInt(getString(R.string.newString), defaultValue);
 
 
     @Override
