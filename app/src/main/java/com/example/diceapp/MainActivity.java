@@ -64,7 +64,8 @@ public class MainActivity extends AppCompatActivity {
                 textViewContent.setText("1? What a loser.");
                 MediaPlayer bad = MediaPlayer.create(getApplicationContext(), R.raw.bad);
                 bad.start();
-                press_count = sharedPref.getInt(getString(R.string.roll_1), 1);
+                SharedPreferences sharedPref1 = getSharedPreferences(getString(R.string.shared_prefs_key), Context.MODE_PRIVATE);
+                press_count = sharedPref1.getInt(getString(R.string.roll_1), 0);
                 press_count++;
                 editor.putInt(getString(R.string.roll_1), press_count);
                 editor.commit();
@@ -74,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
                 roll2.start();
                 imageViewDie.setImageResource(R.drawable.die2);
                 textViewContent.setText("");
-                press_count = sharedPref.getInt(getString(R.string.roll_2), 1);
+                press_count = sharedPref.getInt(getString(R.string.roll_2), 0);
                 press_count++;
                 editor.putInt(getString(R.string.roll_2), press_count);
                 editor.commit();
@@ -84,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
                 roll3.start();
                 imageViewDie.setImageResource(R.drawable.die3);
                 textViewContent.setText("");
-                press_count = sharedPref.getInt(getString(R.string.roll_3), 1);
+                press_count = sharedPref.getInt(getString(R.string.roll_3), 0);
                 press_count++;
                 editor.putInt(getString(R.string.roll_3), press_count);
                 editor.commit();
@@ -94,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
                 roll4.start();
                 imageViewDie.setImageResource(R.drawable.die4);
                 textViewContent.setText("");
-                press_count = sharedPref.getInt(getString(R.string.roll_4), 1);
+                press_count = sharedPref.getInt(getString(R.string.roll_4), 0);
                 press_count++;
                 editor.putInt(getString(R.string.roll_4), press_count);
                 editor.commit();
@@ -104,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
                 roll5.start();
                 imageViewDie.setImageResource(R.drawable.die5);
                 textViewContent.setText("");
-                press_count = sharedPref.getInt(getString(R.string.roll_5), 1);
+                press_count = sharedPref.getInt(getString(R.string.roll_5), 0);
                 press_count++;
                 editor.putInt(getString(R.string.roll_5), press_count);
                 editor.commit();
@@ -114,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
                 roll6.start();
                 imageViewDie.setImageResource(R.drawable.die6);
                 textViewContent.setText("");
-                press_count = sharedPref.getInt(getString(R.string.roll_6), 1);
+                press_count = sharedPref.getInt(getString(R.string.roll_6), 0);
                 press_count++;
                 editor.putInt(getString(R.string.roll_6), press_count);
                 editor.commit();
@@ -124,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
                 roll7.start();
                 imageViewDie.setImageResource(R.drawable.die7);
                 textViewContent.setText("");
-                press_count = sharedPref.getInt(getString(R.string.roll_7), 1);
+                press_count = sharedPref.getInt(getString(R.string.roll_7), 0);
                 press_count++;
                 editor.putInt(getString(R.string.roll_7), press_count);
                 editor.commit();
@@ -134,7 +135,7 @@ public class MainActivity extends AppCompatActivity {
                 roll8.start();
                 imageViewDie.setImageResource(R.drawable.die8);
                 textViewContent.setText("");
-                press_count = sharedPref.getInt(getString(R.string.roll_8), 1);
+                press_count = sharedPref.getInt(getString(R.string.roll_8), 0);
                 press_count++;
                 editor.putInt(getString(R.string.roll_8), press_count);
                 editor.commit();
@@ -144,7 +145,7 @@ public class MainActivity extends AppCompatActivity {
                 roll9.start();
                 imageViewDie.setImageResource(R.drawable.die9);
                 textViewContent.setText("");
-                press_count = sharedPref.getInt(getString(R.string.roll_9), 1);
+                press_count = sharedPref.getInt(getString(R.string.roll_9), 0);
                 press_count++;
                 editor.putInt(getString(R.string.roll_9), press_count);
                 editor.commit();
@@ -154,7 +155,7 @@ public class MainActivity extends AppCompatActivity {
                 roll10.start();
                 imageViewDie.setImageResource(R.drawable.die10);
                 textViewContent.setText("");
-                press_count = sharedPref.getInt(getString(R.string.roll_10), 1);
+                press_count = sharedPref.getInt(getString(R.string.roll_10), 0);
                 press_count++;
                 editor.putInt(getString(R.string.roll_10), press_count);
                 editor.commit();
@@ -164,7 +165,7 @@ public class MainActivity extends AppCompatActivity {
                 roll11.start();
                 imageViewDie.setImageResource(R.drawable.die11);
                 textViewContent.setText("");
-                press_count = sharedPref.getInt(getString(R.string.roll_11), 1);
+                press_count = sharedPref.getInt(getString(R.string.roll_11), 0);
                 press_count++;
                 editor.putInt(getString(R.string.roll_11), press_count);
                 editor.commit();
@@ -174,7 +175,7 @@ public class MainActivity extends AppCompatActivity {
                 roll12.start();
                 imageViewDie.setImageResource(R.drawable.die12);
                 textViewContent.setText("");
-                press_count = sharedPref.getInt(getString(R.string.roll_12), 1);
+                press_count = sharedPref.getInt(getString(R.string.roll_12), 0);
                 press_count++;
                 editor.putInt(getString(R.string.roll_12), press_count);
                 editor.commit();
@@ -184,7 +185,7 @@ public class MainActivity extends AppCompatActivity {
                 roll13.start();
                 imageViewDie.setImageResource(R.drawable.die13);
                 textViewContent.setText("");
-                press_count = sharedPref.getInt(getString(R.string.roll_13), 1);
+                press_count = sharedPref.getInt(getString(R.string.roll_13), 0);
                 press_count++;
                 editor.putInt(getString(R.string.roll_13), press_count);
                 editor.commit();
@@ -194,7 +195,7 @@ public class MainActivity extends AppCompatActivity {
                 roll14.start();
                 imageViewDie.setImageResource(R.drawable.die14);
                 textViewContent.setText("");
-                press_count = sharedPref.getInt(getString(R.string.roll_14), 1);
+                press_count = sharedPref.getInt(getString(R.string.roll_14), 0);
                 press_count++;
                 editor.putInt(getString(R.string.roll_14), press_count);
                 editor.commit();
@@ -204,7 +205,7 @@ public class MainActivity extends AppCompatActivity {
                 roll15.start();
                 imageViewDie.setImageResource(R.drawable.die15);
                 textViewContent.setText("");
-                press_count = sharedPref.getInt(getString(R.string.roll_15), 1);
+                press_count = sharedPref.getInt(getString(R.string.roll_15), 0);
                 press_count++;
                 editor.putInt(getString(R.string.roll_15), press_count);
                 editor.commit();
@@ -214,7 +215,7 @@ public class MainActivity extends AppCompatActivity {
                 roll16.start();
                 imageViewDie.setImageResource(R.drawable.die16);
                 textViewContent.setText("");
-                press_count = sharedPref.getInt(getString(R.string.roll_16), 1);
+                press_count = sharedPref.getInt(getString(R.string.roll_16), 0);
                 press_count++;
                 editor.putInt(getString(R.string.roll_16), press_count);
                 editor.commit();
@@ -224,7 +225,7 @@ public class MainActivity extends AppCompatActivity {
                 roll17.start();
                 imageViewDie.setImageResource(R.drawable.die17);
                 textViewContent.setText("");
-                press_count = sharedPref.getInt(getString(R.string.roll_17), 1);
+                press_count = sharedPref.getInt(getString(R.string.roll_17), 0);
                 press_count++;
                 editor.putInt(getString(R.string.roll_17), press_count);
                 editor.commit();
@@ -234,7 +235,7 @@ public class MainActivity extends AppCompatActivity {
                 roll18.start();
                 imageViewDie.setImageResource(R.drawable.die18);
                 textViewContent.setText("");
-                press_count = sharedPref.getInt(getString(R.string.roll_18), 1);
+                press_count = sharedPref.getInt(getString(R.string.roll_18), 0);
                 press_count++;
                 editor.putInt(getString(R.string.roll_18), press_count);
                 editor.commit();
@@ -244,7 +245,7 @@ public class MainActivity extends AppCompatActivity {
                 roll19.start();
                 imageViewDie.setImageResource(R.drawable.die19);
                 textViewContent.setText("");
-                press_count = sharedPref.getInt(getString(R.string.roll_19), 1);
+                press_count = sharedPref.getInt(getString(R.string.roll_19), 0);
                 press_count++;
                 editor.putInt(getString(R.string.roll_19), press_count);
                 editor.commit();
@@ -254,7 +255,7 @@ public class MainActivity extends AppCompatActivity {
                 textViewContent.setText("Wow, you got a 20.");
                 MediaPlayer good = MediaPlayer.create(getApplicationContext(), R.raw.good);
                 good.start();
-                press_count = sharedPref.getInt(getString(R.string.roll_20), 1);
+                press_count = sharedPref.getInt(getString(R.string.roll_20), 0);
                 press_count++;
                 editor.putInt(getString(R.string.roll_20), press_count);
                 editor.commit();
